@@ -6,7 +6,7 @@ decrementBtnRef.addEventListener("click", onDecrementClick);
 incrementBtnRef.addEventListener("click", onIncrementClick);
 
 function onDecrementClick() {
-  counterValueRef.textContent -= 1;
+  counterValueRef.textContent = Number(counterValueRef.textContent) - 1;
 }
 
 function onIncrementClick() {

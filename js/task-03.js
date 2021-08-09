@@ -18,5 +18,8 @@ const imageEls = images.map((item) => {
   return imageEl;
 });
 
+console.log(imageEls);
+console.log(typeof imageEls);
+
 const listImageEl = document.getElementById("gallery");
-listImageEl.insertAdjacentHTML("afterbegin", imageEls);
+listImageEl.insertAdjacentHTML("afterbegin", imageEls.join(""));
